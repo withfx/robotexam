@@ -6,7 +6,7 @@
 > 内容：C++ 基础、ROS2 话题/服务/launch、Git 与 GitHub 学习报告  
 > 语言：C++（ROS2 部分使用 rclcpp）
 
-这是我在准备学校农业机器人实验室面试时完成的考核作业。项目里的代码全部使用 C++，没有使用 Python 写业务节点；exam2 里只有一个 .py 文件，那是 ROS2 要求的 launch 启动脚本。
+这是我在准备这次农业机器人实验室面试时完成的考核作业。项目里的代码全部使用 C++，没有使用 Python 写业务节点；exam2 里只有一个 .py 文件，那是 ROS2 要求的 launch 启动脚本。
 
 ## 一、目录结构
 
@@ -296,7 +296,7 @@ git push -u origin main
 
 git status 这一步不要省，它能看出有没有把 build/、install/、log/ 或 .exe 文件加进去。
 
-> 老师要求提交的压缩包里不要放编译后的文件，所以这个项目没有加 .gitignore。没有 .gitignore 的话，Git 不会自动忽略编译产物，提交前必须自己确认一遍。如果已经误加了，可以执行 git rm -r --cached exam2/build exam2/install exam2/log 把它们从 Git 的记录里移除，再重新提交。
+> 要求提交的压缩包里不要放编译后的文件，所以这个项目没有加 .gitignore。没有 .gitignore 的话，Git 不会自动忽略编译产物，提交前必须自己确认一遍。如果已经误加了，可以执行 git rm -r --cached exam2/build exam2/install exam2/log 把它们从 Git 的记录里移除，再重新提交。
 
 ### 6. 为什么说这个项目“改路径就能用”
 
