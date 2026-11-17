@@ -321,13 +321,13 @@ git push -u origin main
 
 ### 8. 上传前检查清单
 
-- [ ] GitHub 仓库类型是 Public（发布时不要勾选 `Keep this code private`）；
-- [ ] README 写清楚了项目结构、编译命令和运行方法；
-- [ ] 代码里没有写死自己电脑的绝对路径；
-- [ ] 没有提交 `build/`、`install/`、`log/`、`.exe` 等编译产物；
-- [ ] 没有把 GitHub 密码、Token 写进代码；
-- [ ] 每个源文件都能单独说明它解决的是哪道题；
-- [ ] commit 说明写的是具体内容，不是一堆 `update`。
+- [x] GitHub 仓库类型是 Public；
+- [x] README 写清楚了项目结构、编译命令和运行方法；
+- [x] 代码里没有写死自己电脑的绝对路径；
+- [x] 没有提交 `build/`、`install/`、`log/`、`.exe` 等编译产物；
+- [x] 没有把 GitHub 密码、Token 写进代码；
+- [x] 每个源文件都能单独说明它解决的是哪道题；
+- [x] commit 说明写的是具体内容，不是一堆 `update`。
 
 ## 六、学习总结
 
