@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>service_node</name>
+  <version>0.0.1</version>
+  <description>自定义加法服务的服务端和客户端</description>
+  <maintainer email="withfx@users.noreply.github.com">withfx</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>add_two_ints_srv</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

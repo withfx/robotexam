@@ -1,0 +1,28 @@
+# exam2 的参数文件
+#
+# 注意：yaml 里的键要写节点的完整名字。
+# launch 里设置了命名空间 robot1，发布者又被重命名为 atil_1，
+# 所以它的完整名字是 /robot1/atil_1，只写 atil_1 是匹配不上的。
+#
+# 话题名和服务名前面加了 /，表示用全局名字。
+# 这样即使节点在 robot1 命名空间里，话题仍然是 /robot_status，
+# 服务仍然是 /add_two_ints，和题目的要求一致。
+
+/robot1/atil_1:
+  ros__parameters:
+    topic_name: "/robot_status"
+    publish_frequency: 1.0
+
+/robot1/robot_status_subscriber:
+  ros__parameters:
+    topic_name: "/robot_status"
+
+/robot1/add_two_ints_server:
+  ros__parameters:
+    service_name: "/add_two_ints"
+
+/robot1/add_two_ints_client:
+  ros__parameters:
+    service_name: "/add_two_ints"
+    a: 3
+    b: 5
